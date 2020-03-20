@@ -1,0 +1,29 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0056g000003uyiDAAQ",
+      "createdByName": "Vincent Espinoza",
+      "createdDate": "2020-02-23T23:38:55.000Z",
+      "fileName": "groups/g1.group",
+      "fullName": "g1",
+      "id": "00G6g000000jLgQEAU",
+      "lastModifiedById": "0056g000003uyiDAAQ",
+      "lastModifiedByName": "Vincent Espinoza",
+      "lastModifiedDate": "2020-02-23T23:38:55.000Z",
+      "type": "Group"
+    },
+    {
+      "createdById": "0056g000003uyiDAAQ",
+      "createdByName": "Vincent Espinoza",
+      "createdDate": "2020-03-17T01:52:50.000Z",
+      "fileName": "groups/ApproverGroup.group",
+      "fullName": "ApproverGroup",
+      "id": "00G6g000000js2zEAA",
+      "lastModifiedById": "0056g000003uyiDAAQ",
+      "lastModifiedByName": "Vincent Espinoza",
+      "lastModifiedDate": "2020-03-17T01:52:50.000Z",
+      "type": "Group"
+    }
+  ]
+}

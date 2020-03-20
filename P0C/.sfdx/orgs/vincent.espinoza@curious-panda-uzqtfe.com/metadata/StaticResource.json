@@ -1,0 +1,17 @@
+{
+  "status": 0,
+  "result": {
+    "createdById": "0056g000003uyiDAAQ",
+    "createdByName": "Vincent Espinoza",
+    "createdDate": "2020-02-19T13:51:45.000Z",
+    "fileName": "staticresources/trlhdtips__tt_penpal.resource",
+    "fullName": "trlhdtips__tt_penpal",
+    "id": "0816g000002cxrMAAQ",
+    "lastModifiedById": "0056g000003uyiDAAQ",
+    "lastModifiedByName": "Vincent Espinoza",
+    "lastModifiedDate": "2020-02-19T13:51:45.000Z",
+    "manageableState": "installed",
+    "namespacePrefix": "trlhdtips",
+    "type": "StaticResource"
+  }
+}

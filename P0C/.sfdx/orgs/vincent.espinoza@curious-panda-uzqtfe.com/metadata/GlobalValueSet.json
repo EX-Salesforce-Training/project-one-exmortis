@@ -1,0 +1,16 @@
+{
+  "status": 0,
+  "result": {
+    "createdById": "0056g000003uyiDAAQ",
+    "createdByName": "Vincent Espinoza",
+    "createdDate": "2020-02-20T18:56:40.000Z",
+    "fileName": "globalValueSets/Default.globalValueSet",
+    "fullName": "Default",
+    "id": "0Nt6g0000009l5PCAQ",
+    "lastModifiedById": "0056g000003uyiDAAQ",
+    "lastModifiedByName": "Vincent Espinoza",
+    "lastModifiedDate": "2020-02-20T18:56:40.000Z",
+    "manageableState": "unmanaged",
+    "type": "GlobalValueSet"
+  }
+}
