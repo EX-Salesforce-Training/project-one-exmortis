@@ -6,6 +6,14 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>AccountSearchController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>FindandEdit</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>TestTrigger</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -348,6 +356,7 @@
     </objectPermissions>
     <pageAccesses>
         <apexPage>shipping_page</apexPage>
+        <apexPage>AccountSearch</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <tabVisibilities>
