@@ -1,0 +1,16 @@
+{
+  "status": 0,
+  "result": {
+    "createdById": "0056g000003uyiDAAQ",
+    "createdByName": "Vincent Espinoza",
+    "createdDate": "2020-03-17T22:35:24.000Z",
+    "fileName": "letterhead/Awaiting_Approval_LH.letter",
+    "fullName": "Awaiting_Approval_LH",
+    "id": "0166g000000XbQvAAK",
+    "lastModifiedById": "0056g000003uyiDAAQ",
+    "lastModifiedByName": "Vincent Espinoza",
+    "lastModifiedDate": "2020-03-17T22:35:24.000Z",
+    "manageableState": "unmanaged",
+    "type": "Letterhead"
+  }
+}
