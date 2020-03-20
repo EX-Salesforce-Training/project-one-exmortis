@@ -1,0 +1,18 @@
+<apex:page controller="display_shipping">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:inputField value="{!Mailstatus.DeliveryStatus__c}"/>
+            <apex:commandButton action="{!showmail}" value="Show ME"/>
+        </apex:pageBlock>
+        
+        <apex:pageblock >
+              <apex:pageblocktable value="{!maillist}" var="Mail__c">
+                  <apex:column value="{!Mail__c.id}" />
+        	  </apex:pageblocktable>
+        </apex:pageblock>
+        
+        <apex:pageblock >
+           <apex:commandButton action="{!nextpage}" value="next page" reRender="display"/>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>
