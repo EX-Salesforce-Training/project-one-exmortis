@@ -356,6 +356,9 @@
     </objectPermissions>
     <pageAccesses>
         <apexPage>shipping_page</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>AccountSearch</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
