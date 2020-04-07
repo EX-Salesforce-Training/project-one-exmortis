@@ -3,13 +3,18 @@
         
         <apex:commandButton value="See Past Deliveries" action="{!GetPastDeliveries}"/>
         
-        <apex:pageBlock title="Past Deliveries" rendered="{!if(deliveredMailList.size>0, true, false)}">
+        <apex:pageBlock id="pastDeliveries" title="Past Deliveries" rendered="{!if(deliveredMailList.size>0, true, false)}">
             
             <apex:pageBlockTable value="{!deliveredMailList}" var="mail">
                 <apex:column value="{!mail.Name}"/>
                 <apex:column value="{!mail.Address__c}"/>
                 <apex:column value="{!mail.DeliveryStatus__c}"/>
             </apex:pageBlockTable>
+            
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Previous" action="{!PreviousPage}" disabled="{!previousButtonIsDisabled}"/>
+                <apex:commandButton value="Next" action="{!NextPage}" disabled="{!nextButtonIsDisabled}"/>
+            </apex:pageBlockButtons>
             
         </apex:pageBlock>
         
