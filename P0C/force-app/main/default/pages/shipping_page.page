@@ -16,11 +16,7 @@
             </apex:pageBlockButtons>
         </apex:pageblock>
         
-        <!-- <apex:pageblock >
-           <apex:commandButton action="{!nextpage}" value="Next Page" reRender="display"/>
-          <apex:commandButton action="{!previouspage}" value="Previous Page" reRender="display"/>
-
-        </apex:pageblock>    -->
+        
        
     </apex:form>
 </apex:page>
