@@ -1,0 +1,70 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <apex:page controller="SearchEditController">\
+    <apex:form >\
+        <apex:pageBlock >\
+			 <apex:inputText value="\{!s\}"/>\
+            <apex:commandButton action="\{!FindAccount\}" value="FindAcc" reRender="display"> <apex:actionSupport event="onClick" reRender="displayContact" /> </apex:commandButton>\
+        </apex:pageBlock> \
+        <apex:pageBlock id="display" title="Accounts">\
+            <apex:pageBlockTable value="\{!acct\}" var="Account"> \
+                    <apex:column value="\{!Account.Name\}"/>\
+                    <apex:column value="\{!Account.Phone\}"/>\
+                    <apex:column value="\{!Account.ShippingStreet\}"/>\
+                    <apex:column value="\{!Account.ShippingCity\}"/>\
+                    <apex:column value="\{!Account.ShippingState\}"/> \
+                    <apex:column value="\{!Account.ShippingCountry\}"/>\
+                    <apex:column value="\{!Account.ShippingPostalCode\}"/>\
+            </apex:pageBlockTable>\
+            \
+        \
+       <!-- </apex:pageBlock> -->\
+		\
+        <!-- <apex:pageBlock id="displayContact" title="Contacts information">-->\
+      \
+            <apex:pageBlockTable value="\{!cont\}" var="obj"> \
+				<apex:column value="\{!obj.FirstName\}"/>\
+                <apex:column value="\{!obj.LastName\}"/>\
+                <apex:column value="\{!obj.Email\}"/>\
+                    \
+        </apex:pageBlockTable>\
+            \
+        \
+        </apex:pageBlock>       \
+        \
+        \
+\
+        \
+        <apex:pageBlock >\
+            <apex:pageBlockSection >\
+                Name\
+                <apex:outputText value="\{!Name\}"/>\
+                <apex:inputText value="\{!Name\}" />\
+                Phone\
+                <apex:outputText value="\{!phone\}"/>\
+                <apex:inputText value="\{!phone\}" />\
+                Street\
+                <apex:outputText value="\{!street\}"/>\
+                <apex:inputText value="\{!street\}" />\
+                City\
+                <apex:outputText value="\{!city\}"/>\
+                <apex:inputText value="\{!city\}" />\
+                State\
+                <apex:outputText value="\{!state\}"/>\
+                <apex:inputText value="\{!state\}" />\
+                Country\
+                <apex:outputText value="\{!country\}"/>\
+                <apex:inputText value="\{!country\}" />\
+                ZipCode\
+                <apex:outputText value="\{!postalCode\}"/>\
+                <apex:inputText value="\{!postalCode\}" />\
+            </apex:pageBlockSection>\
+            <apex:commandButton action="\{!upateAccountName\}" value="Update" reRender="display"> </apex:commandButton>\
+        </apex:pageBlock>\
+    </apex:form>\
+</apex:page>}
