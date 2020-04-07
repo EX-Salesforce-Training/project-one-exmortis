@@ -1,7 +1,9 @@
 public class display_shipping {
     private integer off = 0;
-    private boolean nextbutton{get;set;}
-    private boolean prebutton{get;set;}
+
+    public boolean nextbutton{get;private set;}
+    public boolean prebutton{get;private set;}
+
     public Mail__c Mailstatus{get;set;}
     public list<Mail__c> maillist{get;set;}
     public display_shipping(){
