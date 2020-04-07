@@ -1,19 +1,35 @@
 public class display_shipping {
     private integer off = 0;
     private boolean nextbutton{get;set;}
+    private boolean prebutton{get;set;}
     public Mail__c Mailstatus{get;set;}
     public list<Mail__c> maillist{get;set;}
     public display_shipping(){
-        Mailstatus = new Mail__c(deliveryStatus__c = 'missing');
+       
+        Mailstatus = new Mail__c(deliveryStatus__c = 'in transit');
+        nextButton = false;
+        prebutton = true;
     }
     public void showMail(){
-        maillist = [ select id from Mail__c where deliveryStatus__c =:Mailstatus.deliveryStatus__c limit 5 OFFSET: off];
+        maillist = [ select id,name from Mail__c where deliveryStatus__c =:Mailstatus.deliveryStatus__c limit 5 OFFSET: off];
     }
     public void nextpage(){
         off+=5;
         showMail();
-        if(MailList.size()<5){
+        prebutton = false;
+        if(MailList.size()<5 || maillist.size() == 0){
             nextbutton = true;
+        }
+    }
+    public void previouspage(){
+        if(off != 0){
+            off -= 5;
+        }
+        nextbutton = false;
+        showMail();
+        if(MailList.size() == 0 || off ==0){
+            prebutton = true;
+            
         }
     }
 }
