@@ -14,10 +14,6 @@
         <submitter>Mail_Handler</submitter>
         <type>role</type>
     </allowedSubmitters>
-    <allowedSubmitters>
-        <submitter>test-auf8jsnfsyjd@example.com</submitter>
-        <type>user</type>
-    </allowedSubmitters>
     <approvalPageFields>
         <field>Name</field>
         <field>Owner</field>
