@@ -20,4 +20,42 @@
         <senderType>CurrentUser</senderType>
         <template>Approval_Process_Templates/Rejected</template>
     </alerts>
+    <alerts>
+        <fullName>Mail_in_process</fullName>
+        <description>Mail in process</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>test-f2bgiyyzbyax@example.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Mail_in_Process</template>
+    </alerts>
+    <rules>
+        <fullName>Mail done</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Mail__c.DeliveryStatus__c</field>
+            <operation>equals</operation>
+            <value>DELIVERED</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Mail update</fullName>
+        <actions>
+            <name>Mail_in_process</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Mail__c.DeliveryStatus__c</field>
+            <operation>equals</operation>
+            <value>IN TRANSIT</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
 </Workflow>
