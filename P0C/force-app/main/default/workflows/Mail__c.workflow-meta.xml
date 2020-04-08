@@ -12,18 +12,24 @@
         <template>unfiled$public/Mail_in_Process</template>
     </alerts>
     <alerts>
-        <fullName>Mail_in_process</fullName>
-        <description>Mail in process</description>
+        <fullName>Send_insurance_approved_email</fullName>
+        <description>Send insurance approved email</description>
         <protected>false</protected>
         <recipients>
-            <type>accountOwner</type>
-        </recipients>
-        <recipients>
-            <recipient>test-f2bgiyyzbyax@example.com</recipient>
-            <type>user</type>
+            <type>owner</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>unfiled$public/Mail_in_Process</template>
+        <template>Approval_Process_Templates/Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_insurance_rejected_email</fullName>
+        <description>Send insurance rejected email</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval_Process_Templates/Rejected</template>
     </alerts>
     <alerts>
         <fullName>Mail_in_process1</fullName>
