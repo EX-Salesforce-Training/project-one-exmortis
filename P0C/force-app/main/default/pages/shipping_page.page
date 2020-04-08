@@ -11,11 +11,12 @@
                   <apex:column value="{!Mail__c.id}" />
         	  </apex:pageblocktable>
               <apex:pageBlockButtons >
-
                 <apex:commandButton value="Previous" action="{!previousPage}" disabled="{!prebutton}"/>
                 <apex:commandButton value="Next" action="{!nextPage}" disabled="{!nextbutton}"/>
             </apex:pageBlockButtons>
         </apex:pageblock>
-   
+        
+        
+       
     </apex:form>
 </apex:page>
