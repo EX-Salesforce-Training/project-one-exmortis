@@ -2,16 +2,13 @@
 <Queue xmlns="http://soap.sforce.com/2006/04/metadata">
     <doesSendEmailToMembers>true</doesSendEmailToMembers>
     <email>calebflick@gmail.com</email>
-    <name>Postal Service Queue</name>
+    <name>High Priority Queue</name>
     <queueMembers>
         <publicGroups>
-            <publicGroup>Postal_Service_Group</publicGroup>
+            <publicGroup>High_Priority_Group</publicGroup>
         </publicGroups>
     </queueMembers>
     <queueSobject>
         <sobjectType>Case</sobjectType>
-    </queueSobject>
-    <queueSobject>
-        <sobjectType>Mail__c</sobjectType>
     </queueSobject>
 </Queue>
