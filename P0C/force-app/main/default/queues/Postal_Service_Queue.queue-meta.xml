@@ -9,6 +9,9 @@
         </publicGroups>
     </queueMembers>
     <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
         <sobjectType>Mail__c</sobjectType>
     </queueSobject>
 </Queue>
