@@ -4,7 +4,7 @@
         <processMetadataValues>
             <name>processSelection</name>
             <value>
-                <stringValue>insurance - insurance</stringValue>
+                <stringValue>Mail Insurance - Mail_Insurance</stringValue>
             </value>
         </processMetadataValues>
         <processMetadataValues>
@@ -20,7 +20,7 @@
             </value>
         </processMetadataValues>
         <name>myRule_1_A1</name>
-        <label>asdf</label>
+        <label>Submit for Approval</label>
         <locationX>100</locationX>
         <locationY>200</locationY>
         <actionName>submit</actionName>
@@ -37,7 +37,7 @@
         <inputParameters>
             <name>processDefinitionNameOrId</name>
             <value>
-                <stringValue>insurance</stringValue>
+                <stringValue>Mail_Insurance</stringValue>
             </value>
         </inputParameters>
         <inputParameters>
@@ -66,41 +66,41 @@
                 <processMetadataValues>
                     <name>inputDataType</name>
                     <value>
-                        <stringValue>Picklist</stringValue>
+                        <stringValue>Boolean</stringValue>
                     </value>
                 </processMetadataValues>
                 <processMetadataValues>
                     <name>leftHandSideType</name>
                     <value>
-                        <stringValue>Picklist</stringValue>
+                        <stringValue>Currency</stringValue>
                     </value>
                 </processMetadataValues>
                 <processMetadataValues>
                     <name>operatorDataType</name>
                     <value>
-                        <stringValue>String</stringValue>
+                        <stringValue>Currency</stringValue>
                     </value>
                 </processMetadataValues>
                 <processMetadataValues>
                     <name>rightHandSideType</name>
                     <value>
-                        <stringValue>Picklist</stringValue>
+                        <stringValue>Boolean</stringValue>
                     </value>
                 </processMetadataValues>
-                <leftValueReference>myVariable_current.DeliveryStatus__c</leftValueReference>
-                <operator>EqualTo</operator>
+                <leftValueReference>myVariable_current.Insurance__c</leftValueReference>
+                <operator>IsNull</operator>
                 <rightValue>
-                    <stringValue>MISSING</stringValue>
+                    <booleanValue>false</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
                 <targetReference>myRule_1_A1</targetReference>
             </connector>
-            <label>Is mail</label>
+            <label>IsInsured</label>
         </rules>
     </decisions>
-    <interviewLabel>Mail-3_InterviewLabel</interviewLabel>
-    <label>Mail</label>
+    <interviewLabel>InsuranceApproval-1_InterviewLabel</interviewLabel>
+    <label>InsuranceApproval</label>
     <processMetadataValues>
         <name>ObjectType</name>
         <value>
