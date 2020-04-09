@@ -12,6 +12,17 @@
         <template>unfiled$public/Mail_in_Process</template>
     </alerts>
     <alerts>
+        <fullName>Mail_in_process1</fullName>
+        <description>Mail in process</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Mail_man</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Mail_in_Process</template>
+    </alerts>
+    <alerts>
         <fullName>Send_insurance_approved_email</fullName>
         <description>Send insurance approved email</description>
         <protected>false</protected>
@@ -30,17 +41,6 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>Approval_Process_Templates/Rejected</template>
-    </alerts>
-    <alerts>
-        <fullName>Mail_in_process1</fullName>
-        <description>Mail in process</description>
-        <protected>false</protected>
-        <recipients>
-            <recipient>Mail_man</recipient>
-            <type>group</type>
-        </recipients>
-        <senderType>CurrentUser</senderType>
-        <template>unfiled$public/Mail_in_Process</template>
     </alerts>
     <rules>
         <fullName>Mail done</fullName>
