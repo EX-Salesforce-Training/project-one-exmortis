@@ -4,6 +4,15 @@
 
 package.xml
 
+# Standard metadata
+
+**appMenu
+**appSwitcher
+**objectTranslations
+**profiles
+**settings
+**networks
+
 # LWC configuration files
 **/jsconfig.json
 **/.eslintrc.json
