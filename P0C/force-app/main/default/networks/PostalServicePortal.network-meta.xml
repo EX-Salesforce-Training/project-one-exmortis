@@ -29,7 +29,6 @@
     <networkMemberGroups>
         
         <profile>Admin</profile>
-        <profile>Customers</profile>
         <profile>CustomerCustom</profile>
     </networkMemberGroups>
     <networkPageOverrides>
