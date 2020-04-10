@@ -121,10 +121,7 @@
         <apexClass>SubmitCaseController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
-    <classAccesses>
-        <apexClass>Test</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
+    
     <classAccesses>
         <apexClass>TestTrigger</apexClass>
         <enabled>false</enabled>
@@ -196,11 +193,7 @@
         <field>Account.Industry</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Account.IsExcludedFromRealign</field>
-        <readable>false</readable>
-    </fieldPermissions>
+  
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Jigsaw</field>
@@ -915,11 +908,7 @@
         <recordType>Account.PersonAccRT</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.Default</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
+   
     <tabVisibilities>
         <tab>Add_Contact_Account</tab>
         <visibility>Hidden</visibility>
