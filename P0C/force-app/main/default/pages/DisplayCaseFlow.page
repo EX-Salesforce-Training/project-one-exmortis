@@ -1,0 +1,5 @@
+<apex:page >
+
+<flow:interview name="CreateNewCase"/>
+
+</apex:page>
