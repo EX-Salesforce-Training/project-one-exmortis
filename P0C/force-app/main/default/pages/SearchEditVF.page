@@ -1,7 +1,7 @@
 <apex:page controller="SearchEditController">
     <apex:form >
         <apex:pageBlock >
-			 <apex:inputText value="{!s}"/>
+             <apex:inputText value="{!s}"/>
             <apex:commandButton action="{!FindAccount}" value="FindAcc" reRender="display"> <apex:actionSupport event="onClick" reRender="displayContact" /> </apex:commandButton>
         </apex:pageBlock> 
         <apex:pageBlock id="display" title="Accounts">
@@ -17,11 +17,11 @@
             
         
        <!-- </apex:pageBlock> -->
-		
+        
         <!-- <apex:pageBlock id="displayContact" title="Contacts information">-->
       
             <apex:pageBlockTable value="{!cont}" var="obj"> 
-				<apex:column value="{!obj.FirstName}"/>
+                <apex:column value="{!obj.FirstName}"/>
                 <apex:column value="{!obj.LastName}"/>
                 <apex:column value="{!obj.Email}"/>
                     
