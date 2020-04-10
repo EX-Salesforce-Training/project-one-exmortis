@@ -27,7 +27,7 @@
     <forgotPasswordTemplate>unfiled$public/CommunityForgotPasswordEmailTemplate</forgotPasswordTemplate>
     <gatherCustomerSentimentData>false</gatherCustomerSentimentData>
     <networkMemberGroups>
-        <permissionSet>CreateCases</permissionSet>
+        
         <profile>Admin</profile>
         <profile>Customers</profile>
         <profile>CustomerCustom</profile>
