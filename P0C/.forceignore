@@ -4,11 +4,15 @@
 
 package.xml
 
+Case.settings
+
 **appMenu
 **appSwitcher
 
 **SessionSetting
 **PasswordPolicy
+
+
 
 # LWC configuration files
 **/jsconfig.json
