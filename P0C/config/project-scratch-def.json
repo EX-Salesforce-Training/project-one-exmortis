@@ -1,16 +1,5 @@
 {
   "orgName": "Demo company",
   "edition": "Developer",
-  "features": [
-    "AuthorApex",
-    "ServiceCloud",
-    "Knowledge",
-    "Communities",
-    "Sites"
-  ],
-  "settings": {
-    "communitiesSettings": {
-        "enableNetworksEnabled": true
-    }
-  }
+  "features": []
 }
