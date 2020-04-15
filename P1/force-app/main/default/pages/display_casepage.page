@@ -1,0 +1,20 @@
+<apex:page controller="display_pastcase">
+    <apex:form >
+        <apex:pageblock >
+            <apex:commandButton action="{!displaycase}" value="Show Past Cases"/>
+            <apex:commandButton action="{!displaypastmonth}" value="Show Past Cases For Last Month"/>
+        </apex:pageblock>
+        <apex:pageblock >
+              <apex:pageblocktable value="{!pastcaselist}" var="Case">
+                  <apex:column value="{!Case.status}" />
+                  <apex:column value="{!Case.id}" />
+                  <apex:column value="{!Case.ClosedDate}" />
+              </apex:pageblocktable>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Previous" action="{!previousPage}" disabled="{!prebutton}"/>
+                <apex:commandButton value="Next" action="{!nextPage}" disabled="{!nextbutton}"/>
+            </apex:pageBlockButtons>
+        </apex:pageblock>
+        
+    </apex:form>
+</apex:page>
